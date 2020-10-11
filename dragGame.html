@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/dragGame.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    // $( "#draggableBall" ).draggable();
+    $( "#draggablePerson" ).draggable();
+    $( "#draggableBall" ).draggable({ containment: "#containment-wrapper", scroll: false });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="containment-wrapper">
+  <img id="draggableBall" style="width: 30px; height: 30px;" src="/soccer-ball.jpg">
+  <img id="draggablePerson" style="width: 50px; height: 50px;" src="/imgprof.jpg">
+</div>
+ <p>sdfsdf</p>
+ 
+</body>
+</html>
